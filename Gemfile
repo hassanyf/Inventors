@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.1'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -14,6 +13,7 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 3.5', '>= 3.5.5'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
+gem 'acts_as_votable', '~> 0.10.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

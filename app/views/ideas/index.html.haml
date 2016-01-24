@@ -4,5 +4,8 @@
 	%p
 		= idea.comments.count
 		Comments
+	%p
+		= idea.get_likes.size
+		Likes
 
 = link_to "Add Idea", new_idea_path

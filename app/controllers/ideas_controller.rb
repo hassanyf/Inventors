@@ -1,5 +1,5 @@
 class IdeasController < ApplicationController
-	before_action :find_idea, only: [:show, :edit, :update, :destroy]
+	before_action :find_idea, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
 	before_action :authenticate_user!, except: [:index, :show]
 	
 	def index
@@ -38,6 +38,16 @@ class IdeasController < ApplicationController
 	def destroy
 		@idea.destroy
 		redirect_to root_path
+	end
+
+	def upvote
+		@idea.upvote_by current_user
+		redirect_to :back
+	end
+
+	def downvote
+		@idea.downvote_by current_user
+		redirect_to :back
 	end
 
 	private

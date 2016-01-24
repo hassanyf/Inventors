@@ -3,6 +3,14 @@
 %p= @idea.link
 %p= @idea.description
 %p= @idea.user.name
+%p
+	= @idea.get_upvotes.size
+	Likes
+%p
+	= @idea.get_downvotes.size
+	Dislikes
+= link_to "Like", like_idea_path(@idea), method: :get
+= link_to "Dislike", dislike_idea_path(@idea), method: :get
 
 #comment
 	%h2.comment_count= pluralize(@idea.comments.count, "Comment")
