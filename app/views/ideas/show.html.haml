@@ -1,6 +1,7 @@
 %h1= @idea.title
 %p= @idea.link
 %p= @idea.description
+%p= @idea.user.name
 
 = link_to "Edit", edit_idea_path(@idea)
 = link_to "Destroy", idea_path(@idea), method: :delete, data: { confirm: "Are you sure?" }
