@@ -24,7 +24,7 @@
 				= link_to "Edit", edit_idea_path(@idea), class: "data"
 				= link_to "Delete", idea_path(@idea), method: :delete, data: { confirm: "Are you sure?" }, class: "data"
 		#random_post
-			%h3 Random Inspiration
+			%h3 Like what you see? Check out other people's idea!
 			.post
 				.post_image
 					= link_to (image_tag @random_idea.image.url(:medium)), idea_path(@random_idea)

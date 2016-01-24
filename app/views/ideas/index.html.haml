@@ -1,16 +1,16 @@
 - if user_signed_in?
 	%p#intro
-		Hello
+		Hello,
 		= current_user.name
 		%br/
 		%span
 			Share your idea and see what's others are thinking.
 - else
 	%p#intro
-		What's your muse?
+		What's your idea?
 		%br/
 		%span
-			Share your inspiration and see what's inspiring others.
+			Share your idea and see what others are thinking.
 #posts
 	- @ideas.each do |idea|
 		.post
