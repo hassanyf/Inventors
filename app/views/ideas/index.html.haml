@@ -1,1 +1,4 @@
-%h1 This is placeholder
+- @ideas.each do |idea|
+	%h2= link_to idea.title, idea
+
+= link_to "Add Idea", new_idea_path
