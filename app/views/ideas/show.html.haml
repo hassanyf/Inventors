@@ -1,26 +1,34 @@
-= image_tag @idea.image.url(:medium)
-%h1= @idea.title
-%p= @idea.link
-%p= @idea.description
-%p= @idea.user.name
-%p
-	= @idea.get_upvotes.size
-	Likes
-%p
-	= @idea.get_downvotes.size
-	Dislikes
-= link_to "Like", like_idea_path(@idea), method: :get
-= link_to "Dislike", dislike_idea_path(@idea), method: :get
+#post_show
+	%h1= @idea.title
+	%p.username
+		Shared by
+		= @idea.user.name
+		about
+		= time_ago_in_words(@idea.created_at)
+	.clearfix
+		.post_image_description
+			= image_tag @idea.image.url(:medium)
+			.description= simple_format(@idea.description)
+		.post_data
+			= link_to "Visit Link", @idea.link, class: "button"
+			= link_to like_idea_path(@idea), method: :get, class: "data" do
+				%i.fa.fa-thumbs-o-up
+				= pluralize(@idea.get_upvotes.size, "Like")
+			= link_to dislike_idea_path(@idea), method: :get, class: "data" do
+				%i.fa.fa-thumbs-o-down
+				= pluralize(@idea.get_downvotes.size, "Dislike")
+			%p.data
+				%i.fa.fa-comments-o
+				= pluralize(@idea.comments.count, "Comment")
+			- if @idea.user == current_user
+				= link_to "Edit", edit_idea_path(@idea), class: "data"
+				= link_to "Delete", idea_path(@idea), method: :delete, data: { confirm: "Are you sure?" }, class: "data"
 
-#comment
+#comments
 	%h2.comment_count= pluralize(@idea.comments.count, "Comment")
 	- @comments.each do |comment|
 		.comment
 			%p.username= comment.user.name
 			%p.content= comment.content
 
-	= render 'comments/form'
-
-= link_to "Edit", edit_idea_path(@idea)
-= link_to "Destroy", idea_path(@idea), method: :delete, data: { confirm: "Are you sure?" }
-= link_to "Home", root_path
+	= render "comments/form"

@@ -1,11 +1,32 @@
-- @ideas.each do |idea|
-	= link_to (image_tag idea.image.url(:small))
-	%h2= link_to idea.title, idea
-	%p
-		= idea.comments.count
-		Comments
-	%p
-		= idea.get_likes.size
-		Likes
-
-= link_to "Add Idea", new_idea_path
+- if user_signed_in?
+	%p#intro
+		Hello
+		= current_user.name
+		%br/
+		%span
+			Share your idea and see what's others are thinking.
+- else
+	%p#intro
+		What's your muse?
+		%br/
+		%span
+			Share your inspiration and see what's inspiring others.
+#posts
+	- @ideas.each do |idea|
+		.post
+			.post_image
+				= link_to (image_tag idea.image.url(:small)), idea
+			.post_content
+				.title
+					%h2= link_to idea.title, idea
+				.data.clearfix
+					%p.username
+						Shared by
+						= idea.user.name
+					%p.buttons
+						%span
+							%i.fa.fa-comments-o
+							= idea.comments.count
+						%span
+							%i.fa.fa-thumbs-o-up
+							= idea.get_likes.size
