@@ -8,6 +8,7 @@ class IdeasController < ApplicationController
 
 	def show
 		@comments = Comment.where(idea_id: @idea)
+		@random_idea = Idea.where.not(id: @idea).order("RANDOM()").first
 	end
 
 	def new

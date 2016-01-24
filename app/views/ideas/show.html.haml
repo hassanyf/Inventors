@@ -23,6 +23,25 @@
 			- if @idea.user == current_user
 				= link_to "Edit", edit_idea_path(@idea), class: "data"
 				= link_to "Delete", idea_path(@idea), method: :delete, data: { confirm: "Are you sure?" }, class: "data"
+		#random_post
+			%h3 Random Inspiration
+			.post
+				.post_image
+					= link_to (image_tag @random_idea.image.url(:medium)), idea_path(@random_idea)
+				.post_content
+					.title
+						%h2= link_to @random_idea.title, idea_path(@random_idea)
+					.data.clearfix
+						%p.username
+							Shared by
+							= @random_idea.user.name
+						%p.buttons
+							%span
+								%i.fa.fa-comments-o
+								= @random_idea.comments.count
+							%span
+								%i.fa.fa-thumbs-o-up
+								= @random_idea.get_likes.size
 
 #comments
 	%h2.comment_count= pluralize(@idea.comments.count, "Comment")
