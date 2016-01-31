@@ -14,9 +14,10 @@
 			%nav
 				- if user_signed_in?
 					= link_to current_user.name, edit_user_registration_path
+					= link_to "Sign Out", destroy_user_session_path, :method => :delete
 					= link_to "Add New Idea", new_idea_path, class: "button"
 				- else
-					= link_to "Sign in", new_user_session_path
+					= link_to "Sign In", new_user_session_path
 					= link_to "Sign Up", new_user_registration_path, class: "button"
 	%p.notice= notice
 	%p.alert= alert

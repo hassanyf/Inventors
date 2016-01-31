@@ -19,6 +19,9 @@ class IdeasController < ApplicationController
 		@idea = current_user.ideas.build(idea_params)
 
 		if @idea.save
+			@user = current_user
+
+			PostMailer.post_created(@user).deliver
 			redirect_to @idea
 		else
 			render 'new'

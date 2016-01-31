@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
 		@comment.idea_id = @idea.id
 
 		if @comment.save
+			CommentMailer.comment_created(current_user, @idea.user, @comment.content).deliver
 			redirect_to idea_path(@idea)
 		else
 			render 'new'
