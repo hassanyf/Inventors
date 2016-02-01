@@ -1,0 +1,12 @@
+%h1 Advanced Search
+= form_for @search do |s|
+  .field
+    = s.label :keywords
+    %br/
+    = s.text_field :keywords
+  .field
+    = s.label :category
+    %br/
+    = s.select :category, options_for_select(@categories), :include_blank => true
+  .actions
+    = s.submit "Search", class: "pure-button"

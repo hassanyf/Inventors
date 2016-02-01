@@ -9,6 +9,8 @@
 		.post_image_description
 			= image_tag @idea.image.url(:medium)
 			.description= simple_format(@idea.description)
+			Category: 
+			= @idea.category
 		.post_data
 			= link_to "Visit Link", @idea.link, class: "button"
 			= link_to like_idea_path(@idea), method: :get, class: "data" do

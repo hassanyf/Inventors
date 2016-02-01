@@ -1,0 +1,26 @@
+%h1 Search Result
+
+- if @search.search_ideas.empty?
+  %p No ideas found!
+
+- else
+  - @search.search_ideas.each do |idea| 
+    %br/
+    #posts
+      .post
+        .post_image
+          = link_to (image_tag idea.image.url(:small)), idea
+        .post_content
+          .title
+            %h2= link_to idea.title, idea
+          .data.clearfix
+            %p.username
+              Shared by
+              = idea.user.name
+            %p.buttons
+              %span
+                %i.fa.fa-comments-o
+                = idea.comments.count
+              %span
+                %i.fa.fa-thumbs-o-up
+                = idea.get_likes.size

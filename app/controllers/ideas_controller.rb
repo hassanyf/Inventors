@@ -3,7 +3,7 @@ class IdeasController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	
 	def index
-		@ideas = Idea.all.order("created_at DESC")
+		@ideas = Idea.search(params[:search]).all.order("created_at DESC")
 	end
 
 	def show
@@ -61,6 +61,6 @@ class IdeasController < ApplicationController
 	end
 
 	def idea_params
-		params.require(:idea).permit(:title, :link, :description, :image)
+		params.require(:idea).permit(:title, :link, :description, :image, :category)
 	end
 end
