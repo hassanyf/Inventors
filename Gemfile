@@ -12,6 +12,7 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 3.5', '>= 3.5.5'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.14'
 
 group :production do
   gem "pg"
