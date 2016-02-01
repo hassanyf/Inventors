@@ -7,7 +7,7 @@ class Idea < ActiveRecord::Base
 
   	def self.search(search)
   		if search
-  			where(["title LIKE ?","%#{search}%"]).all.order("created_at DESC")
+  			where(["title ILIKE ?","%#{search}%"]).all.order("created_at DESC")
   		else
   			all
   		end
