@@ -57,10 +57,10 @@ class IdeasController < ApplicationController
 	private
 
 	def find_idea
-		@idea = Idea.find(params[:id])
+		@idea = Idea.friendly.find(params[:id])
 	end
 
 	def idea_params
-		params.require(:idea).permit(:title, :link, :description, :image, :category)
+		params.require(:idea).permit(:title, :link, :description, :image, :category, :slug)
 	end
 end

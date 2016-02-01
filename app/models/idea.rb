@@ -12,4 +12,8 @@ class Idea < ActiveRecord::Base
   			all
   		end
   	end
+
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
 end
