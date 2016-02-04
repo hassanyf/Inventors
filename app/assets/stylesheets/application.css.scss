@@ -82,5 +82,11 @@ header {
 	}
 }
 
+p.date {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: -7px;
+}
+
 @import 'home.css.scss';
 @import 'ideas.css.scss';

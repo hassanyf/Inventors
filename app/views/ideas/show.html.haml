@@ -50,6 +50,7 @@
 	- @comments.each do |comment|
 		.comment
 			%p.username= comment.user.name
+			%p.date= l(comment.created_at, format: '%B, %d %Y, %H:%M')
 			%p.content= comment.content
 
 	= render "comments/form"
