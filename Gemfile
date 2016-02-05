@@ -14,7 +14,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'aws-sdk', '< 2.0'
 gem 'friendly_id', '~> 5.1'
-gem 'closure_tree', '~> 6.0'
+gem 'mailboxer', '~> 0.13.0'
 
 group :production do
   gem "pg"

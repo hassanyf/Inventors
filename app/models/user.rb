@@ -5,4 +5,15 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable, :timeoutable
   has_many :ideas
   has_many :comments
+
+  acts_as_messageable
+
+  def mailboxer_name
+    self.name
+  end
+
+  def mailboxer_email(object)
+    self.email
+  end
+  
 end

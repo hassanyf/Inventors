@@ -30,8 +30,8 @@ module InventorsV2
         :address    => 'smtp.gmail.com',
         :domain     => 'mail.google.com',
         :port       => 587,
-        :user_name  => ENV["USER"],
-        :password   => ENV["PASS"],
+        :user_name  => ENV["USER"] ,
+        :password   => ENV["PASS"] ,
         :authentication => 'login',
         :enable_starttls_auto => true
     }
