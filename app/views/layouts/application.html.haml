@@ -37,7 +37,9 @@
 
 		= link_to "Advanced Search", new_search_path
 		= yield
-
+		= render 'layouts/footer'
+		
+				
 	:javascript
 		$(document).ready(function(){
 			setTimeout(function(){

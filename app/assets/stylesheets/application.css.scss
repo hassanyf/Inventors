@@ -4,11 +4,10 @@
 
  */
 
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 }
 
@@ -90,6 +89,56 @@ p.date {
     font-size: 14px;
     margin-top: -7px;
 }
+
+.footer-bottom {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer .hsy {
+	color: #c6463d;
+	text-decoration: none;
+	font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+footer .hsy:hover {
+	border-bottom: 1px solid #c6463d;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-bottom li {
+    float: left;
+    padding: 8px 16px;
+}
+
+.footer-bottom li a {
+    display: inline-block;
+    color: #9f9f9f;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-bottom li a:hover {
+	color: #000;
+    transition: all 0.5s ease-in-out;
+	border-bottom: 1px solid #000;
+}
+
+footer {
+	font-size: 13px;
+	margin-top: 425px;
+	margin-bottom: 50px;
+}
+
+footer p {
+	margin-right: 1px;
+	padding-left: 15px;
+}
+
+
 
 @import 'home.css.scss';
 @import 'ideas.css.scss';
