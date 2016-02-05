@@ -1,7 +1,7 @@
 = form_for :conversation, url: :conversations, html: { class: "" } do |f|
   .form-group
     = f.label :recipients
-    = f.select(:recipients, User.all.collect {|p| [ p.name, p.id ] }, {}, { multiple: true , class: "form-control" })
+    = f.select(:recipients, User.all.collect {|p| [ p.name, p.id ] }, {}, { multiple: true , class: "chosen-select form-control" })
   .form-group
     = f.label :subject
     = f.text_field :subject, placeholder: "Subject", class: "form-control"
