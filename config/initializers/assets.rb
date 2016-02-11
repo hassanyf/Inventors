@@ -3,6 +3,9 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
+# For rails asset pipeline
+Rails.application.config.assets.precompile += ['modernizr-2.6.2.min.js', 'screen.css', 'main.min.js']
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

@@ -43,5 +43,9 @@ module InventorsV2
     #     :password =>       ENV["PASS"],
     #     :authentication => :plain
     # }
+
+    # For rails asset pipeline
+    #Rails.application.config.assets.precompile += ['modernizr-2.6.2.min.js', 'screen.css', 'main.min.js']
+
   end
 end
