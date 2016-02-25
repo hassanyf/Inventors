@@ -4,7 +4,7 @@
 Rails.application.config.assets.version = '1.0'
 
 # For rails asset pipeline
-Rails.application.config.assets.precompile += ['modernizr-2.6.2.min.js', 'screen.css', 'main.min.js']
+Rails.application.config.assets.precompile += ['modernizr-2.6.2.min.js', 'screen.css', 'main.min.js', 'global.css']
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path

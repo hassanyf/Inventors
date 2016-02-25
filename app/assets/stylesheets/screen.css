@@ -1940,7 +1940,8 @@ select {
   z-index: 3;
   top: 0;
   left: 0;
-  background: url(../img/hero.jpg);
+  background: url(../img/hero.jpg) center center;
+  background-size: cover;
 }
 .home .hero:after, .home2 .hero:after, .home3 .hero:after {
   -webkit-transition: all 0.5s ease;

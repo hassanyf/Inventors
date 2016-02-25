@@ -11,10 +11,6 @@
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)})(document);
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900,300italic,400italic", :rel => "stylesheet", :type => "text/css"}/
-    / modernizer
-    %script{:src => "js/modernizr-2.6.2.min.js"}
-    / styles
-    %link{:href => "css/screen.css", :rel => "stylesheet"}/
   %body.home.default.alt
     #nav-anchor
     #main-nav-wrapper.container
@@ -24,21 +20,24 @@
             %a#invision_logo{:href => "/"} Inventors
           %ul
             %li
-              %a{:href => "/#tour"} Explore
+              %a{:href => "explore/"} Explore
             %li
-              %a{:href => "/customers", :title => "See customers prototyping with InVision"} How it works
+              %a{:href => "how-it-works/"} How it works
             %li
               %a.more{:href => "users/sign_in"} Login
             %li.signup
               %a{:href => "users/sign_up"} Sign Up Free
     %header.hero{"data-home-bg" => "airbnb"}
       .hero-container
-        %h1.hero-title Discover new creative ideas, or share your own
+        %h1.hero-title
+          Discover new creative
+          %br
+          ideas, or share your own
         %h2.hero-subtitle The world's leading prototyping, collaboration & workflow platform
         %p.button.hero-button
-          %a#home-cta{:href => "https://projects.invisionapp.com/d/signup"}> Share an idea
+          %a#home-cta{:href => "users/sign_in"}> Share an idea
           \ 
-          %a#home-cta{:href => "https://projects.invisionapp.com/d/signup", :style => "background-color: #FFF;color: #555;margin-left: 30px;"} Explore
+          %a#home-cta{:href => "users/sign_up", :style => "background-color: #FFF;color: #555;margin-left: 30px;"} Explore
     #tour.container.tour-item.tour-1{"data-i" => "0"}
       .left
         .tour-content
@@ -317,4 +316,3 @@
               %li
                 %a{:href => "/tshirt", :title => "Free design tshirt"} Free T-Shirt
           %li.stretch
-    %script{:src => "js/main.min.js"}
