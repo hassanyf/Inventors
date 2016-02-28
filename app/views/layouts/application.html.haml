@@ -52,35 +52,41 @@
 								= link_to "Settings", edit_user_registration_path
 							%li
 								- if user_signed_in?
-									= link_to "Inbox", mailbox_inbox_path
-									= unread_messages_count
+									= link_to "Inbox", mailbox_inbox_path, class: "li-1"
+									= link_to unread_messages_count
 							%li
 								= link_to "Sign Out", destroy_user_session_path, :method => :delete
-		%main#main
-			.overlay
-			%header.header
-				%nav
-					.search-box
-						- if controller_name != "welcome"
-							= form_tag ideas_path, :method => 'get' do
-								= text_field_tag :search, params[:search], :placeholder => "Search..."
+				- else
+					.login-notice
+						%p
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-				%ul.top-static-bar
-					%li
-						%a{:href => "/"}
-							Explore
-					%li
-						%a{:href => "/"}
-							Trending
-					%li
-						%a{:href => "/"}
-							Most Popular
-					%li
-						%a{:href => "/"}
-							Most Viewed
-					%li
-						%a{:href => "/"}
-							Recent
+		%main#main
+			- if user_signed_in?
+				.overlay
+				%header.header
+					%nav
+						.search-box
+							- if controller_name != "welcome"
+								= form_tag ideas_path, :method => 'get' do
+									= text_field_tag :search, params[:search], :placeholder => "Search..."
+
+					%ul.top-static-bar
+						%li
+							%a{:href => "/"}
+								Explore
+						%li
+							%a{:href => "/"}
+								Trending
+						%li
+							%a{:href => "/popular"}
+								Most Popular
+						%li
+							%a{:href => "/"}
+								Most Viewed
+						%li
+							%a{:href => "/"}
+								Recent
 
 			#main-nano-wrapper.nano
 				.nano-content

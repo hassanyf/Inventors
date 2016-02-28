@@ -63,9 +63,9 @@ a, button, input, textarea, select {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #ff3366;
+  color: #61C7B3;
 }
-
+/*
 input, textarea, button {
   -webkit-appearance: none;
   border-radius: 0;
@@ -74,7 +74,7 @@ input, textarea, button {
   font-family: "Open Sans", "open-sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
+*/
 strong {
   font-weight: 700;
 }
@@ -105,7 +105,7 @@ blockquote.inner {
 blockquote.inner p {
   font-size: 22px;
   line-height: 40px;
-  color: #ff3366;
+  color: #61C7B3;
   margin-bottom: 10px;
 }
 blockquote.inner cite {
@@ -278,13 +278,13 @@ h3 {
   line-height: 28px;
 }
 .footer-links a:hover {
-  color: #ff3366;
+  color: #61C7B3;
 }
 .footer-links a.book {
-  color: #ff3366;
+  color: #61C7B3;
 }
 .footer-links a.book:hover {
-  color: #f42156;
+  color: #61C7B3;
 }
 .footer-links .invision a {
   display: inline-block;
@@ -585,8 +585,8 @@ h3 {
   height: 40px;
 }
 #main-nav-wrapper.container nav ul li.signup a {
-  color: #ff3366;
-  border: solid 1px #ff3366;
+  color: #61C7B3;
+  border: solid 1px #61C7B3;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -595,7 +595,7 @@ h3 {
 }
 #main-nav-wrapper.container nav ul li.signup a:hover {
   color: #fff;
-  background: #f42156;
+  background: #61C7B3;
 }
 #main-nav-wrapper.container nav ul a {
   display: inline-block;
@@ -613,7 +613,7 @@ h3 {
   letter-spacing: 0.05em;
 }
 #main-nav-wrapper.container nav ul a:hover, #main-nav-wrapper.container nav ul a .selected {
-  color: #ff3366;
+  color: #61C7B3;
 }
 
 body.fixed-nav.offset {
@@ -684,17 +684,17 @@ body.fixed-nav #main-nav-wrapper.container nav ul:last-child {
 body.fixed-nav #main-nav-wrapper.container nav ul li.signup a {
   color: #fff;
   border: none;
-  background: #ff3366;
+  background: #61C7B3;
   padding: 12px 17px;
 }
 body.fixed-nav #main-nav-wrapper.container nav ul li.signup a:hover {
-  background: #f42156;
+  background: #61C7B3;
 }
 body.fixed-nav #main-nav-wrapper.container nav ul a {
   color: #8a959e;
 }
 body.fixed-nav #main-nav-wrapper.container nav ul a:hover, body.fixed-nav #main-nav-wrapper.container nav ul a .selected {
-  color: #ff3366;
+  color: #61C7B3;
 }
 
 .simple-inner {
@@ -794,7 +794,7 @@ p.button input,
 p.button button {
   display: inline-block;
   padding: 21px 40px 19px;
-  background: #ff3366;
+  background: #61C7B3;
   border: 0;
   margin-right: 30px;
   border-radius: 5px;
@@ -813,12 +813,12 @@ p.button button {
 p.button a:hover,
 p.button input:hover,
 p.button button:hover {
-  background: #f42156;
+  background: #61C7B3;
 }
 p.button input {
   padding: 23px 40px 22px;
 }
-
+/*
 form {
   display: inline-block;
   margin-bottom: 31px;
@@ -835,8 +835,8 @@ form textarea {
 }
 form input.error,
 form textarea.error {
-  border-color: #ff3366;
-  box-shadow: 0 0 0 1px #ff3366;
+  border-color: #61C7B3;
+  box-shadow: 0 0 0 1px #61C7B3;
 }
 form textarea {
   overflow: auto;
@@ -871,9 +871,9 @@ form input[type=text].error,
 form input[type=search].error,
 form input[type=email].error,
 form input[type=password].error {
-  border-color: #ff3366;
+  border-color: #61C7B3;
 }
-
+*/
 .hiddenElement {
   visibility: hidden;
   padding-right: 10px;
@@ -903,7 +903,7 @@ select {
 }
 .input-select-wrapper.error {
   border-width: 2px;
-  border-color: #ff3366;
+  border-color: #61C7B3;
 }
 .input-select-wrapper select {
   height: 3.2em;
@@ -1289,7 +1289,7 @@ select {
   text-decoration: underline;
 }
 .signup-form-wrapper p.terms a:hover {
-  color: #ff3366;
+  color: #61C7B3;
 }
 
 .footer-signup {
@@ -2545,7 +2545,7 @@ select {
   line-height: 20px;
   color: #fff;
   letter-spacing: 0.1em;
-  background-color: #ff3366;
+  background-color: #61C7B3;
   text-transform: uppercase;
   border-radius: 1em;
   text-align: center;
@@ -4132,7 +4132,7 @@ select {
   margin: 0 0 25px 0;
 }
 .customers .featured-customer .slide-container .see-why a {
-  color: #ff3366;
+  color: #61C7B3;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -4240,7 +4240,7 @@ select {
   display: block;
 }
 .customers .featured-customer .slide-container .bx-pager a.active {
-  background: #ff3366;
+  background: #61C7B3;
 }
 .customers ul.customer-set {
   width: 1000px;
@@ -9009,7 +9009,7 @@ html, body {
   top: 1.5em;
   right: -1.66667em;
   font-size: 1.2em;
-  color: #ff3366;
+  color: #61C7B3;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   display: block !important;
   width: auto;
@@ -9055,7 +9055,7 @@ html, body {
 .enterprise .original .footer-form input[type="email"].error,
 .enterprise .original .footer-form .input-select-wrapper.error {
   box-shadow: none;
-  border: 1px solid #ff3366;
+  border: 1px solid #61C7B3;
 }
 .enterprise .original .footer-form input[type="text"].focused, .enterprise .original .footer-form input[type="text"]:focus,
 .enterprise .original .footer-form input[type="email"].focused,
@@ -10126,7 +10126,7 @@ html, body {
   top: 1.5em;
   right: -1.66667em;
   font-size: 1.2em;
-  color: #ff3366;
+  color: #61C7B3;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   display: block !important;
   width: auto;
@@ -10172,7 +10172,7 @@ html, body {
 .enterprise .alternate .footer-form input[type="email"].error,
 .enterprise .alternate .footer-form .input-select-wrapper.error {
   box-shadow: none;
-  border: 1px solid #ff3366;
+  border: 1px solid #61C7B3;
 }
 .enterprise .alternate .footer-form input[type="text"].focused, .enterprise .alternate .footer-form input[type="text"]:focus,
 .enterprise .alternate .footer-form input[type="email"].focused,
@@ -10397,7 +10397,7 @@ html, body {
   }
 }
 .company #core_values ul a.active {
-  border-color: #ff3366;
+  border-color: #61C7B3;
 }
 .company #core_values ul a.active i {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -10588,7 +10588,7 @@ html, body {
   display: block;
 }
 .company #core_values h3 {
-  color: #ff3366;
+  color: #61C7B3;
   font-size: 24px;
 }
 .company #core_values p {
@@ -11702,7 +11702,7 @@ html, body {
 .company .employee-grid p a {
   font-size: 14px;
   text-transform: none;
-  color: #ff3366;
+  color: #61C7B3;
   font-weight: 400;
   font-family: "Open Sans", "open-sans", sans-serif;
 }
@@ -11716,7 +11716,7 @@ html, body {
   font-size: 15px;
 }
 .company #jobs .icon {
-  border: 2px solid #ff3366;
+  border: 2px solid #61C7B3;
   height: 104px !important;
   width: 104px !important;
   border-radius: 100px;
@@ -11863,7 +11863,7 @@ html, body {
   background: #fff;
 }
 .company #jobs .open-positions li:hover {
-  border-top: solid 2px #ff3366;
+  border-top: solid 2px #61C7B3;
   margin-top: 0px;
 }
 .company #jobs .open-positions li:hover span {
@@ -11974,7 +11974,7 @@ html, body {
   border: 1px solid #d0d5d8;
 }
 .company #contact form input.error, .company #contact form textarea.error, .company #contact form select.error {
-  border-color: #ff3366;
+  border-color: #61C7B3;
 }
 .company #contact form textarea {
   height: 224px;
@@ -12036,7 +12036,7 @@ html, body {
   cursor: pointer;
 }
 .company #contact-thankyou-wrapper button:hover {
-  color: #ff3366;
+  color: #61C7B3;
 }
 
 .plans h1 {
@@ -12061,7 +12061,7 @@ html, body {
   margin-bottom: 25px;
 }
 .plans #signup h2 strong {
-  color: #ff3366;
+  color: #61C7B3;
 }
 .plans #signup form {
   margin-bottom: 11px;
@@ -12180,8 +12180,8 @@ html, body {
   margin: 0 0 47px 0;
 }
 .plans #content .button a {
-  border-color: #ff3366;
-  color: #ff3366;
+  border-color: #61C7B3;
+  color: #61C7B3;
   font-size: 12px;
   margin: 0;
   padding: 13px 15px;
@@ -12193,7 +12193,7 @@ html, body {
 }
 .plans #content .button a:hover {
   color: #fff;
-  background: #f42156;
+  background: #61C7B3;
 }
 
 .plans #content .last .button a {
@@ -12470,7 +12470,7 @@ html, body {
 }
 .new_feature_single #feature-share li.title {
   font: bold 11px/44px "Open Sans", "open-sans", sans-serif;
-  background: #ff3366;
+  background: #61C7B3;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -12484,7 +12484,7 @@ html, body {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #ff3366;
+  border-top: 6px solid #61C7B3;
   position: absolute;
   bottom: -6px;
   left: 50%;
@@ -12648,11 +12648,11 @@ html, body {
 }
 .new_feature_single .featured-article blockquote, .new_feature_single .featured-article blockquote p {
   font: italic 400 25px/1.5em "Open Sans", "open-sans", sans-serif;
-  color: #ff3366;
+  color: #61C7B3;
 }
 .new_feature_single .featured-article blockquote {
   margin: 35px 0 45px 0;
-  border-left: solid 2px #ff3366;
+  border-left: solid 2px #61C7B3;
   padding-left: 25px;
 }
 .new_feature_single .featured-article blockquote span {
@@ -12660,7 +12660,7 @@ html, body {
   border: none !important;
 }
 .new_feature_single .featured-article blockquote a {
-  color: #ff3366;
+  color: #61C7B3;
   text-decoration: none;
 }
 .new_feature_single .featured-article .fluid {
@@ -12788,7 +12788,7 @@ html, body {
   margin-right: 10px;
 }
 .tshirt #header form button {
-  background-color: #ff3366;
+  background-color: #61C7B3;
   border-radius: 5px;
   border: 0;
   width: 61px;
@@ -12797,7 +12797,7 @@ html, body {
   margin: 2px 0 0 0;
 }
 .tshirt #header form button:hover {
-  background: #f42156;
+  background: #61C7B3;
 }
 .tshirt #header form button i {
   display: inline-block;
@@ -13948,7 +13948,7 @@ html, body {
 }
 .subscribe-content h4 strong {
   font-weight: 800;
-  color: #ff3366;
+  color: #61C7B3;
 }
 .subscribe-content .leading-edge {
   padding-top: 40px;

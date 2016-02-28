@@ -1,15 +1,33 @@
-<h2>Log in</h2>
+<body class="align">
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+  <div class="site__container">
+
+    <div class="grid__container">
+
+      <form action="" method="post" class="form form--login", autocomplete="off">
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <%= f.input :email, label: false, required: false, autofocus: true, id: "login__username", class: "form__input", placeholder: "Email" %>
+          <!-- <input id="login__username" type="text" class="form__input" placeholder="Username" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <%= f.input :password, label: false, required: false, placeholder: "Password" %>
+          <!-- <input id="login__password" type="password" class="form__input" placeholder="Password" required> -->
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Sign In">
+        </div>
+        <% end %>
+      </form>
+
+      <p class="text--center"><%= link_to "Sign up ", new_registration_path(resource_name) %><span class="fontawesome-arrow-right" style="margin-left: 5px;"></span><%= link_to "Forgot your password?", new_password_path(resource_name), :class => "sign-up-float" %></p>
+
+    </div>
+
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</body>
