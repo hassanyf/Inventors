@@ -60,6 +60,10 @@
 	clear: both;
 }
 
+form#new_user {
+    margin-top: -45px;
+}
+
 input#user_email, input#user_password, input#user_name, input#user_password_confirmation {
 
     border: 0;
