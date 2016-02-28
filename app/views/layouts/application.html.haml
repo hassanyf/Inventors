@@ -52,8 +52,11 @@
 								= link_to "Settings", edit_user_registration_path
 							%li
 								- if user_signed_in?
-									= link_to "Inbox", mailbox_inbox_path, class: "li-1"
-									= link_to unread_messages_count
+									.outer-mailbox
+										.outer-mailbox-2
+											= link_to unread_messages_count
+										.outer-mailbox-1
+											= link_to "Inbox", mailbox_inbox_path, class: "li-1"
 							%li
 								= link_to "Sign Out", destroy_user_session_path, :method => :delete
 				- else

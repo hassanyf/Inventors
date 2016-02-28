@@ -1,28 +1,33 @@
-.row
-  .spacer
-  .col-md-6
-    = link_to "Compose", new_conversation_path, class: "btn btn-success"
-  .col-md-6.text-right
-    - conversation = @conversation
-    - if conversation.is_trashed?(current_user)
-      = link_to 'Untrash', untrash_conversation_path(conversation), class: 'btn btn-info', method: :post
-    - else
-      = link_to 'Move to trash', trash_conversation_path(conversation), class: 'btn btn-danger', method: :post, |
-        data: {confirm: 'Are you sure?'}                                                                        |
-.row
-  .spacer
-  .col-md-4
-    .panel.panel-default
-      .panel-body
-        = render 'mailbox/folders'
-  .col-md-8
-    .panel.panel-default
-      .panel-body
-        = render partial: 'messages'
-      .panel-footer
-        / Reply Form
-        = form_for :message, url: reply_conversation_path(conversation) do |f|
-          .form-group
-            = f.text_area :body, placeholder: "Reply Message", rows: 4, class: "form-control"
-          = f.submit "Reply", class: 'btn btn-danger pull-right'
-        .clearfix
+.mailbox-wrapper
+  .row
+    .spacer
+    .col-md-12
+      = link_to "Compose", new_conversation_path, class: "btn btn-success"
+      = link_to "Inbox", mailbox_inbox_path, class: "btn"
+      = link_to "Sent", mailbox_sent_path, class: "btn"
+      = link_to "Trash", mailbox_trash_path, class: "btn"
+      - conversation = @conversation
+      .col-trash
+        - if conversation.is_trashed?(current_user)
+          = link_to 'Untrash', untrash_conversation_path(conversation), class: 'btn btn-info', method: :post
+        - else
+          = link_to 'Move to trash', trash_conversation_path(conversation), class: 'btn btn-danger', method: :post, |
+            data: {confirm: 'Are you sure?'}                                                                        |
+
+  .row
+    .spacer
+    -# .col-md-4
+    -#   .panel.panel-default
+    -#     .panel-body
+    -#       = render 'mailbox/folders'
+    .col-md-12
+      .panel.panel-default
+        .panel-body
+          = render partial: 'messages'
+        .panel-footer
+          / Reply Form
+          = form_for :message, url: reply_conversation_path(conversation) do |f|
+            .form-group
+              = f.text_area :body, placeholder: "Reply Message", rows: 4, class: "form-control"
+            = f.submit "Reply", class: 'btn btn-danger pull-right'
+          .clearfix

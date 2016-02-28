@@ -29,6 +29,38 @@
 // 	width: 80%;
 // 	margin: 0 auto;
 // }
+//
+// .outer-mailbox {
+//   display: inline;
+// }
+//
+// .outer-mailbox-1 {
+//   float: left;
+// }
+
+.outer-mailbox-2 {
+  float: right;
+}
+
+.outer-mailbox-2 a {
+  background-color: #d9534f;
+  padding: 2px 13px 0px 11px !important;
+  margin: 0 !important;
+  margin-right: -22px !important;
+  margin-top: 10px !important;
+  border-radius: 6px;
+  color: #fff !important;
+}
+
+.outer-mailbox-2 a:hover {
+  background-color: #d9534f;
+  padding: 2px 13px 0px 11px !important;
+  margin: 0 !important;
+  margin-right: -22px !important;
+  margin-top: 10px !important;
+  border-radius: 6px;
+  color: #fff !important;
+}
 
 #notice_wrapper {
 	position: absolute;
@@ -60,8 +92,16 @@
 	clear: both;
 }
 
+.spacer {
+  padding: 10px 10px;
+}
+
 form#new_user {
     margin-top: -45px;
+}
+
+.col-trash {
+  float: right;
 }
 
 input#user_email, input#user_password, input#user_name, input#user_password_confirmation {
