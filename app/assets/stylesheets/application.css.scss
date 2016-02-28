@@ -60,7 +60,7 @@
 	clear: both;
 }
 
-input#user_email, input#user_password {
+input#user_email, input#user_password, input#user_name, input#user_password_confirmation {
 
     border: 0;
     color: inherit;
@@ -81,7 +81,7 @@ input#user_email, input#user_password {
 input#user_email:-webkit-autofill {
     background-color: #fff !important;
 }
-input#user_email:focus, input#user_email:hover, input#user_password:hover, input#user_password:focus {
+input#user_email:focus, input#user_email:hover, input#user_password:hover, input#user_password:focus, input#user_password_confirmation:hover, input#user_password_confirmation:focus, input#user_name:hover, input#user_name:focus {
   background-color: #434A52;
 }
 

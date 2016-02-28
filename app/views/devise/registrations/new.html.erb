@@ -1,18 +1,51 @@
-<h2>Sign up</h2>
+<body class="align">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
+  <div class="site__container">
 
-  <div class="form-inputs">
-    <%= f.input :name, required: true, autofocus: true %>
-    <%= f.input :email, required: true %>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
+    <div class="grid__container">
+
+      <form action="" method="post" class="form form--login", autocomplete="off", style="margin-top:-40px;">
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <%= f.input :name, label: false, required: true, autofocus: true, id: "login__username", class: "form__input", placeholder: "Full Name"%>
+          <!-- <input id="login__username" type="text" class="form__input" placeholder="Username" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <%= f.input :email, label: false, required: false, autofocus: true, id: "login__username", class: "form__input", placeholder: "Email" %>
+          <!-- <input id="login__username" type="text" class="form__input" placeholder="Username" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <%= f.input :password, label: false, required: false, placeholder: "Password" %>
+          <!-- <input id="login__password" type="password" class="form__input" placeholder="Password" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <%= f.input :password_confirmation, label: false, required: false, placeholder: "Password Confirmation" %>
+          <!-- <input id="login__password" type="password" class="form__input" placeholder="Password" required> -->
+        </div>
+
+        <div class="form__field">
+          <p>
+            By signing up, you agree to our <a href="#">Terms and Conditions</a> and our <a href="#">User Policy</a>
+          </p>
+        </div>
+        <div class="form__field">
+          <input type="submit" value="Sign Up">
+        </div>
+        <% end %>
+      </form>
+
+      <p class="text--center"><%= link_to "Sign in ", new_session_path(resource_name) %><span class="fontawesome-arrow-right" style="margin-left: 5px;"></span></p>
+
+    </div>
+
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</body>
