@@ -4,7 +4,6 @@
 
     <div class="grid__container">
 
-      <form action="" method="post" class="form form--login", autocomplete="off", style="margin-top:-40px;">
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
         <div class="form__field">
@@ -40,7 +39,7 @@
           <input type="submit" value="Sign Up">
         </div>
         <% end %>
-      </form>
+      
 
       <p class="text--center"><%= link_to "Sign in ", new_session_path(resource_name) %><span class="fontawesome-arrow-right" style="margin-left: 5px;"></span></p>
 

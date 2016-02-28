@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  devise_for :users
   #get 'welcome/index'
 
   # conversations
@@ -17,6 +16,7 @@ Rails.application.routes.draw do
   get "mailbox/trash" => "mailbox#trash", as: :mailbox_trash
 
   resources :searches, :only => [:new, :create, :show]
+  devise_for :users
   resources :ideas do
   	member do
   		get "like", to: "ideas#upvote"
@@ -24,10 +24,10 @@ Rails.application.routes.draw do
   	end
   	resources :comments
   end
-  # 
-  # authenticated :user do
-  # 	root 'ideas#index', as: "authenticated_root"
-  # end
+
+  authenticated :user do
+  	root 'ideas#index', as: "authenticated_root"
+  end
 
   root 'welcome#index'
 
