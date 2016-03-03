@@ -2375,7 +2375,7 @@ select {
 
 .brand-assets-modal a.fancybox-item.fancybox-close:hover,
 .brand-assets-modal a.fancybox-item.fancybox-close:focus {
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
@@ -2578,7 +2578,7 @@ select {
 .home .hero-play:focus,
 .home2 .hero-play:focus,
 .home3 .hero-play:focus {
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 
@@ -2787,7 +2787,6 @@ select {
 .home .transparent,
 .home2 .transparent,
 .home3 .transparent {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   -moz-opacity: 0;
   -khtml-opacity: 0;
@@ -2889,7 +2888,7 @@ select {
   vertical-align: bottom;
   overflow: hidden;
   text-transform: capitalize;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
@@ -9108,7 +9107,6 @@ body {
 }
 
 .enterprise .transparent {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   -moz-opacity: 0;
   -khtml-opacity: 0;
@@ -9196,7 +9194,7 @@ body {
 
 .enterprise .customers-list li span {
   position: relative;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
@@ -9500,7 +9498,7 @@ body {
 
 .enterprise .original .icons .icon-set a:hover .icon:before,
 .enterprise .original .icons .icon-set a:focus .icon:before {
-  filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
@@ -9513,7 +9511,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -13455,7 +13453,7 @@ body {
 
 .company #core_values ul a i {
   position: absolute;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   bottom: -23px;
   left: 47px;
@@ -13485,7 +13483,7 @@ body {
 }
 
 .company #core_values ul a.active i {
-  filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
@@ -16571,7 +16569,7 @@ body {
   border-radius: 100px;
   overflow: hidden;
   margin: 0 17px 14px 0;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
 
@@ -16609,7 +16607,7 @@ body {
   width: 112px;
   height: 112px;
   vertical-align: top;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
 
@@ -16946,7 +16944,7 @@ body {
   width: 229px;
   height: 211px;
   float: left;
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   transition: 0.5s;
 }
