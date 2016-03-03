@@ -1,4 +1,50 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<body class="align">
+
+  <div class="site__container">
+
+    <div class="grid__container">
+
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { autocomplete: "off" }) do |f| %>
+        <%= f.error_notification %>
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <%= f.input :name, label: false, required: true, autofocus: true, id: "login__username", class: "form__input", placeholder: "Full Name"%>
+          <!-- <input id="login__username" type="text" class="form__input" placeholder="Username" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <%= f.input :email, label: false, required: false, autofocus: true, id: "login__username", class: "form__input", placeholder: "Email" %>
+          <!-- <input id="login__username" type="text" class="form__input" placeholder="Username" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <%= f.input :password, label: false, required: false, placeholder: "Password" %>
+          <!-- <input id="login__password" type="password" class="form__input" placeholder="Password" required> -->
+        </div>
+
+        <div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <%= f.input :password_confirmation, label: false, required: false, placeholder: "Password Confirmation" %>
+          <!-- <input id="login__password" type="password" class="form__input" placeholder="Password" required> -->
+        </div>
+
+        <div class="form__field">
+          <input type="submit" value="Save">
+        </div>
+        <% end %>
+
+        <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+<!-- <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
@@ -20,9 +66,4 @@
     <%= f.button :submit, "Update" %>
   </div>
 <% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+ -->

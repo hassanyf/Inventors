@@ -1,0 +1,1189 @@
+/*
+
+
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* line 8, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 11, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+body {
+  background: #FFF;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #888;
+}
+
+/* line 42, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.outer-mailbox-2 {
+  float: right;
+}
+
+/* line 46, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.outer-mailbox-2 a {
+  background-color: #d9534f;
+  padding: 2px 13px 0px 11px !important;
+  margin: 0 !important;
+  margin-right: -22px !important;
+  margin-top: 10px !important;
+  border-radius: 6px;
+  color: #fff !important;
+}
+
+/* line 56, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.outer-mailbox-2 a:hover {
+  background-color: #d9534f;
+  padding: 2px 13px 0px 11px !important;
+  margin: 0 !important;
+  margin-right: -22px !important;
+  margin-top: 10px !important;
+  border-radius: 6px;
+  color: #fff !important;
+}
+
+/* line 66, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+#notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(135, 216, 211, 0.85);
+}
+/* line 72, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+#notice_wrapper .alert, #notice_wrapper .notice {
+  padding: 2.5rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #FFF;
+  letter-spacing: 1px;
+}
+
+/* line 83, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.session-wrapper {
+  margin: 0px 50px 0px 60px;
+}
+
+/* line 87, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 92, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 96, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.spacer {
+  padding: 10px 10px;
+}
+
+/* line 100, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+form#new_user {
+  margin-top: -45px;
+}
+
+/* line 104, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.col-trash {
+  float: right;
+}
+
+/* line 108, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input#user_email, input#user_password, input#user_name, input#user_password_confirmation {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  width: 270px;
+  outline: none;
+  padding: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  border-radius: 0.25rem;
+  padding: 1.1rem;
+  background-color: #3b4148 !important;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 126, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input#user_email:-webkit-autofill {
+  background-color: #fff !important;
+}
+
+/* line 129, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input#user_email:focus, input#user_email:hover, input#user_password:hover, input#user_password:focus, input#user_password_confirmation:hover, input#user_password_confirmation:focus, input#user_name:hover, input#user_name:focus {
+  background-color: #434A52;
+}
+
+/* line 134, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* line 137, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.align {
+  background-color: #2c3338;
+  color: #606468;
+  margin: 0;
+  min-height: 100%;
+}
+
+/* line 144, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+a {
+  color: #eee;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 149, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
+/* line 153, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+/* line 164, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.site__container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 3rem 0;
+}
+
+/* line 172, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input[type="password"], input[type="text"], input[type="submit"] {
+  width: 100%;
+}
+
+/* line 175, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+label,
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+/* line 182, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+label {
+  background-color: #363b41;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* line 189, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input[type="text"], input[type="password"] {
+  background-color: #3b4148;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 194, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input[type="text"]:focus, input[type="text"]:hover, input[type="password"]:focus, input[type="password"]:hover {
+  background-color: #434A52;
+}
+
+/* line 197, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input[type="submit"] {
+  background-color: #61C7B3;
+  color: #eee;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 203, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+input[type="submit"]:focus, input[type="submit"]:hover {
+  background-color: #61C7B3;
+}
+
+/* line 206, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.form__field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+/* line 213, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.form__input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 220, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.align {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 236, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 247, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.text--center {
+  text-align: center;
+  display: inline;
+}
+
+/* line 252, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.text--center a {
+  float: left;
+}
+
+/* line 256, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.sign-up-float {
+  float: right !important;
+}
+
+/* line 260, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.grid__container {
+  margin: 0 auto;
+  max-width: 20rem;
+  width: 90%;
+}
+
+/* line 266, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.login-notice {
+  margin: 40px 33px 0 53px;
+}
+
+/* line 269, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.login-notice h2 {
+  font-weight: 400;
+}
+
+/* line 367, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.top-nav {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: inline;
+  float: right;
+}
+
+/* line 373, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+ul.top-menu {
+  margin-right: 0px;
+  margin-top: 0;
+}
+
+/* line 377, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+#top_menu .nav > li, ul.top-menu > li {
+  float: left;
+}
+
+/* line 380, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+ul.top-menu > li > a {
+  color: #666666;
+  font-size: 16px;
+  background: #f6f6f6;
+  padding: 4px 8px;
+  margin-right: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding-right: 8px !important;
+}
+
+/* line 390, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+menu.menu-segment ul a {
+  text-decoration: none;
+}
+
+/* line 393, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.top-nav ul.top-menu > li > a {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  padding: 10px 10px 10px 16px;
+  background: none;
+  margin-right: 0;
+  border: 1px solid #F6F6F6;
+  background: #F6F6F6;
+}
+
+/* line 402, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.extended {
+  max-width: 320px !important;
+  min-width: 160px !important;
+  top: 42px;
+  width: 300px !important;
+  padding: 0 10px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #fff;
+  border: none;
+  left: -10px;
+}
+
+/* line 415, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.top-menu .dropdown-menu:before {
+  border-color: rgba(238, 238, 238, 0);
+  border-bottom-color: #eeeeee;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+/* line 421, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.extended li p {
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+/* line 427, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.extended.inbox li a, .dropdown-menu.extended.tasks-bar li a {
+  background: #f1f2f7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+
+/* line 436, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.extended li a {
+  font-size: 12px;
+  list-style: none;
+}
+
+/* line 440, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.inbox li a .photo img {
+  border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+/* line 448, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.inbox li a .subject .from {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* line 452, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.inbox li a .subject .time {
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+}
+
+/* line 459, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.dropdown-menu.inbox li a .message {
+  display: block !important;
+  font-size: 11px;
+}
+
+/* line 464, C:/Sites/inventors_v2/app/assets/stylesheets/application.css.scss */
+.top-nav form {
+  display: inline;
+}
+
+/* line 1, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#intro {
+  margin: 2.75rem 0 1.75rem 0;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+/* line 6, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#intro span {
+  font-size: 1.25rem;
+  color: #9B9B9B;
+}
+
+/* line 12, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+.title {
+  margin-top: -28px;
+}
+
+/* line 17, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post {
+  background: #F8F9FA;
+  width: 22%;
+  float: left;
+  margin: 1rem 1.5%;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 24, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 27, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 33, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 39, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 42, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 47, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 50, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username, #posts .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 54, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username {
+  float: left;
+}
+/* line 57, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons {
+  float: right;
+}
+/* line 59, C:/Sites/inventors_v2/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+
+/* line 1, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show {
+  padding-top: 2rem;
+}
+/* line 3, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .post_image_description {
+  width: 50%;
+  float: left;
+  margin-right: 5%;
+}
+/* line 8, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .post_data {
+  width: 15%;
+  float: left;
+}
+/* line 11, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .post_data .button {
+  width: 100%;
+  display: inline-block;
+  padding: .75rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #969696;
+}
+/* line 19, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .post_data .button:hover {
+  color: #50A7C7;
+  border: 1px solid #50A7C7;
+}
+/* line 24, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .post_data .data {
+  width: 100%;
+  display: block;
+  padding: .75rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  text-decoration: none;
+  color: #969696;
+  margin: 0;
+}
+/* line 34, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post {
+  width: 25%;
+  margin-left: 5%;
+  margin-top: -3.2rem;
+  float: left;
+}
+/* line 39, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post h3 {
+  font-size: 1rem;
+}
+/* line 42, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post {
+  background: #F8F9FA;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 46, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 49, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 55, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 5px 0px 15px 10px;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 61, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 64, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 69, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 72, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content .data .username, #post_show #random_post .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 76, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content .data .username {
+  float: left;
+}
+/* line 79, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content .data .buttons {
+  float: right;
+}
+/* line 81, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show #random_post .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+/* line 89, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show h1 {
+  margin: 0;
+  color: #333233;
+}
+/* line 93, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show img {
+  width: 100%;
+  border-radius: .3rem;
+}
+/* line 97, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .username {
+  color: #969696;
+  margin: 0 0 1.5rem 0;
+}
+/* line 101, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#post_show .description {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #969696;
+}
+
+/* line 109, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments {
+  padding-bottom: 4rem;
+  width: 50%;
+}
+/* line 112, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments .comment_count {
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+}
+/* line 117, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments .comment {
+  padding: 2rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  padding-left: 5%;
+}
+/* line 121, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments .comment .username {
+  font-size: 1.3rem;
+  color: #333233;
+  margin: 0 0 .5rem 0;
+}
+/* line 126, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments .comment .content {
+  margin: 0;
+  color: #969696;
+}
+/* line 131, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments .comment_content {
+  margin-top: 2.5rem;
+}
+/* line 133, C:/Sites/inventors_v2/app/assets/stylesheets/ideas.css.scss */
+#comments .comment_content textarea {
+  width: 100%;
+  margin: 1rem 0;
+  min-height: 150px;
+  border: 1px solid #E4E4E4;
+  background: #F8F9FA;
+  border-radius: 0.3rem;
+}
+/* @group Base */
+/* line 9, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  zoom: 1;
+  *display: inline;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* line 17, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 20, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  z-index: 1010;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-top: 0;
+  background: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+/* line 31, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0;
+}
+/* line 34, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container a {
+  cursor: pointer;
+}
+/* line 39, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .search-choice .group-name, .chosen-container .chosen-single .group-name {
+  margin-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #999999;
+}
+/* line 46, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .search-choice .group-name:after, .chosen-container .chosen-single .group-name:after {
+  content: ":";
+  padding-left: 2px;
+  vertical-align: top;
+}
+
+/* @end */
+/* @group Single Chosen */
+/* line 58, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 25px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIvPjxzdG9wIG9mZnNldD0iNTIlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjRmNGY0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #ffffff), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
+  background: -moz-linear-gradient(#ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: -webkit-linear-gradient(#ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: linear-gradient(#ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+}
+/* line 75, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-default {
+  color: #999;
+}
+/* line 78, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 85, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 38px;
+}
+/* line 88, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) -42px 1px no-repeat;
+  font-size: 1px;
+}
+/* line 97, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+/* line 101, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+/* line 104, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+/* line 111, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) no-repeat 0px 2px;
+}
+/* line 118, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+/* line 124, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-search input[type="text"] {
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  width: 100%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #aaa;
+  background: #fff url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) no-repeat 100% -20px;
+  background: url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) no-repeat 100% -20px;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+/* line 139, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single .chosen-drop {
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+  background-clip: padding-box;
+}
+/* line 144, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  left: -9999px;
+}
+
+/* @end */
+/* @group Results */
+/* line 152, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results {
+  color: #444;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 161, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li {
+  display: none;
+  margin: 0;
+  padding: 5px 6px;
+  list-style: none;
+  line-height: 15px;
+  word-wrap: break-word;
+  -webkit-touch-callout: none;
+}
+/* line 169, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer;
+}
+/* line 173, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li.disabled-result {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+/* line 178, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3875d7;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiMzODc1ZDciLz48c3RvcCBvZmZzZXQ9IjkwJSIgc3RvcC1jb2xvcj0iIzJhNjJiYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+  color: #fff;
+}
+/* line 183, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li.no-results {
+  color: #777;
+  display: list-item;
+  background: #f4f4f4;
+}
+/* line 188, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li.group-result {
+  display: list-item;
+  font-weight: bold;
+  cursor: default;
+}
+/* line 193, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li.group-option {
+  padding-left: 15px;
+}
+/* line 196, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container .chosen-results li em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* @end */
+/* @group Multi Chosen */
+/* line 206, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  height: auto !important;
+  height: 1%;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+  background-image: -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background-image: -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
+  background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
+  cursor: text;
+}
+/* line 219, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li {
+  float: left;
+  list-style: none;
+}
+/* line 222, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+/* line 226, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin: 1px 0;
+  padding: 0;
+  height: 25px;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+  color: #999;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+/* line 241, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice {
+  position: relative;
+  margin: 3px 5px 3px 0;
+  padding: 3px 20px 3px 5px;
+  border: 1px solid #aaa;
+  max-width: 100%;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNmNGY0ZjQiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIvPjxzdG9wIG9mZnNldD0iNTIlIiBzdG9wLWNvbG9yPSIjZThlOGU4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-size: 100% 19px;
+  background-repeat: repeat-x;
+  background-clip: padding-box;
+  box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #333;
+  line-height: 13px;
+  cursor: default;
+}
+/* line 257, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice span {
+  word-wrap: break-word;
+}
+/* line 260, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) -42px 1px no-repeat;
+  font-size: 1px;
+}
+/* line 269, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  background-position: -42px -10px;
+}
+/* line 274, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  background-color: #e4e4e4;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNmNGY0ZjQiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIvPjxzdG9wIG9mZnNldD0iNTIlIiBzdG9wLWNvbG9yPSIjZThlOGU4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  color: #666;
+}
+/* line 281, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+  background: #d4d4d4;
+}
+/* line 283, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+  background-position: -42px -10px;
+}
+/* line 288, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-results {
+  margin: 0;
+  padding: 0;
+}
+/* line 292, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-multi .chosen-drop .result-selected {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+/* @end */
+/* @group Active  */
+/* line 302, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-active .chosen-single {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* line 307, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #aaa;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiLz48c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
+  background-image: -moz-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: -webkit-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
+  box-shadow: 0 1px 0 #fff inset;
+}
+/* line 316, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-left: none;
+  background: transparent;
+}
+/* line 319, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -18px 2px;
+}
+/* line 324, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-active .chosen-choices {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* line 327, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+  color: #222 !important;
+}
+
+/* @end */
+/* @group Disabled Support */
+/* line 335, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+/* line 338, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-disabled .chosen-single {
+  cursor: default;
+}
+/* line 341, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+  cursor: default;
+}
+
+/* @end */
+/* @group Right to Left */
+/* line 348, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl {
+  text-align: right;
+}
+/* line 350, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-single {
+  overflow: visible;
+  padding: 0 8px 0 0;
+}
+/* line 354, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-single span {
+  margin-right: 0;
+  margin-left: 26px;
+  direction: rtl;
+}
+/* line 359, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-single-with-deselect span {
+  margin-left: 38px;
+}
+/* line 362, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-single div {
+  right: auto;
+  left: 3px;
+}
+/* line 366, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-single abbr {
+  right: auto;
+  left: 26px;
+}
+/* line 370, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-choices li {
+  float: right;
+}
+/* line 372, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-choices li.search-field input[type="text"] {
+  direction: rtl;
+}
+/* line 375, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 3px 5px 3px 19px;
+}
+/* line 378, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+  right: auto;
+  left: 4px;
+}
+/* line 384, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl.chosen-container-single-nosearch .chosen-search,
+.chosen-rtl .chosen-drop {
+  left: 9999px;
+}
+/* line 388, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-results {
+  margin: 0 0 4px 4px;
+  padding: 0 4px 0 0;
+}
+/* line 392, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-results li.group-option {
+  padding-right: 15px;
+  padding-left: 0;
+}
+/* line 396, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-right: none;
+}
+/* line 399, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl .chosen-search input[type="text"] {
+  padding: 4px 5px 4px 20px;
+  background: #fff url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) no-repeat -30px -20px;
+  background: url(/assets/chosen-sprite-8aa69ee6b2376505578d758bfbbc52aec88fa5e591f1a7cabd8adfa80a7b613a.png) no-repeat -30px -20px;
+  direction: rtl;
+}
+/* line 406, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-single div b {
+  background-position: 6px 2px;
+}
+/* line 410, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+  background-position: -12px 2px;
+}
+
+/* @end */
+/* @group Retina compatibility */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  /* line 421, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/chosen-rails-1.4.3/vendor/assets/stylesheets/chosen.scss */
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url(/assets/chosen-sprite@2x-1e349b80fba8c23b63656925fda8dfe3c5927b5d0d8a1672143416caacf460fb.png) !important;
+    background-size: 52px 37px !important;
+    background-repeat: no-repeat !important;
+  }
+}
+/* @end */

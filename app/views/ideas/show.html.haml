@@ -47,7 +47,7 @@
 									= @random_idea.get_likes.size
 
 	#comments
-		%h2.comment_count= pluralize(@idea.comments.count, "Comment")
+		%h1.comment_count= pluralize(@idea.comments.count, "Comment")
 		- @comments.each do |comment|
 			.comment
 				%p.username= comment.user.name

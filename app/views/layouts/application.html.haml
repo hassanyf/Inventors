@@ -48,7 +48,7 @@
 					= link_to "Add an Idea", new_idea_path, class: "compose-button"
 					%menu.menu-segment
 						%ul
-							%li.active
+							%li
 								= link_to "Settings", edit_user_registration_path
 							%li
 								- if user_signed_in?
