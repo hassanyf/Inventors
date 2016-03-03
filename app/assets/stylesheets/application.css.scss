@@ -6,16 +6,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
-// colors
-$color-1: #2b3e51; // Pickled Bluewood
-$color-2: #2c97de; // Curious Blue
-$color-3: #ecf0f1; // Porcelain
-$color-4: #ffffff; // White
-$color-5: #e94b35; // Cinnabar
-
-// fonts
-$primary-font: Roboto, sans-serif;
-
 * {
   box-sizing: border-box;
 }
@@ -88,16 +78,16 @@ input {
   width: 100%;
   z-index: 999;
   background: rgba(135, 216, 211, 0.85);
-  .alert,
-  .notice {
-    padding: 2.5rem 0;
-    text-align: center;
-    margin: 0;
-    font-size: 1.25em;
-    font-weight: 700;
-    color: #FFF;
-    letter-spacing: 1px;
-  }
+}
+
+#notice_wrapper .alert .notice{
+  padding: 2.5rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #FFF;
+  letter-spacing: 1px;
 }
 
 .session-wrapper {
