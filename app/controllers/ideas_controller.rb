@@ -6,9 +6,6 @@ class IdeasController < ApplicationController
 		@ideas = Idea.search(params[:search]).all.order("created_at DESC")
 	end
 
-	def explore
-	end
-
 	def show
 		@comments = Comment.where(idea_id: @idea)
 		@random_idea = Idea.where.not(id: @idea).order("RANDOM()").first
@@ -55,6 +52,18 @@ class IdeasController < ApplicationController
 	def downvote
 		@idea.downvote_by current_user
 		redirect_to :back
+	end
+
+	def explore
+		@ideas = Idea.search(params[:search]).all.order("created_at DESC")
+	end
+
+	def trending
+		@ideas = Idea.search(params[:search]).all.order("comments_count, created_at DESC")
+	end
+
+	def popular
+		@ideas = Idea.search(params[:search]).all.order("created_at DESC")
 	end
 
 	private

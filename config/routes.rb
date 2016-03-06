@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   get "mailbox/sent" => "mailbox#sent", as: :mailbox_sent
   get "mailbox/trash" => "mailbox#trash", as: :mailbox_trash
 
+  get "ideas/explore" => "ideas#explore", as: :ideas_explore
+  get "ideas/trending" => "ideas#trending", as: :ideas_trending
+  get "ideas/popular" => "ideas#popular", as: :ideas_popular
+
   resources :searches, :only => [:new, :create, :show]
   devise_for :users
   resources :ideas do
