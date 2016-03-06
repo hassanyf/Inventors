@@ -6,8 +6,7 @@ class IdeasController < ApplicationController
 		@ideas = Idea.search(params[:search]).all.order("created_at DESC")
 	end
 
-	def popular
-		@ideas = Idea.search(params[:search]).all.order("created_at DESC")
+	def explore
 	end
 
 	def show

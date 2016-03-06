@@ -1,22 +1,31 @@
-%form.cd-form.floating-labels{}
-  = simple_form_for @idea do |f|
-    %fieldset
-      .icon
-        -# %label.cd-label{:for => "cd-name"} Name
-        -# %input#cd-name.user{:name => "cd-name", :required => "", :type => "text"}/
-        = f.input :image, label: false, required: false, autofocus: true, id: "login__username", class: "form__input", placeholder: "Email"
-      .icon
-        -# %label.cd-label{:for => "cd-company"} Company
-        -# %input#cd-company.company{:name => "cd-company", :type => "text"}/
-        = f.input :title, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Idea Title"
-      .icon
-        -# %label.cd-label{:for => "cd-email"} Email
-        = f.input :link, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Link"
-      %div
-        %p
-          = f.input :link, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Category"
-      .icon
-        -# %label.cd-label{:for => "cd-textarea"} Project description
-        = f.input :description, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Explain your idea, and be brief..."
-      %div
-        %input{:type => "submit", :value => "Share Idea"}
+= simple_form_for @idea do |f|
+  = f.input :image, label: false, placeholder: "Image..."
+  = f.input :title, label: false, placeholder: "Idea Title"
+  = f.input :link, label: false, placeholder: "Link"
+  = f.input :category, label: false, placeholder: "Catergory"
+  = f.input :description, label: false, placeholder: "Description"
+
+  = f.button :submit
+
+-# %form.cd-form.floating-labels{}
+-#   = simple_form_for @idea do |f|
+-#     %fieldset
+-#       .icon
+-#         -# %label.cd-label{:for => "cd-name"} Name
+-#         -# %input#cd-name.user{:name => "cd-name", :required => "", :type => "text"}/
+-#         = f.input :image, label: false, required: false, autofocus: true, id: "login__username", class: "form__input", placeholder: "Email"
+-#       .icon
+-#         -# %label.cd-label{:for => "cd-company"} Company
+-#         -# %input#cd-company.company{:name => "cd-company", :type => "text"}/
+-#         = f.input :title, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Idea Title"
+-#       .icon
+-#         -# %label.cd-label{:for => "cd-email"} Email
+-#         = f.input :link, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Link"
+-#       %div
+-#         %p
+-#           = f.input :link, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Category"
+-#       .icon
+-#         -# %label.cd-label{:for => "cd-textarea"} Project description
+-#         = f.input :description, label: false, required: false, autofocus: true, id: "user", class: "user", placeholder: "Explain your idea, and be brief..."
+-#       %div
+-#         %input{:type => "submit", :value => "Share Idea"}

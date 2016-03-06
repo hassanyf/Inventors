@@ -398,61 +398,61 @@ menu.menu-segment ul a {
   display: inline;
 }
 
-.cd-form {
+form#new_idea {
   width: 90%;
   max-width: 600px;
   margin: 4em auto;
 }
 
-.cd-form::after {
+form#new_idea::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.cd-form fieldset {
+form#new_idea fieldset {
   margin: 24px 0;
 }
 
-.cd-form legend {
+form#new_idea legend {
   padding-bottom: 10px;
   margin-bottom: 20px;
   font-size: 1.5rem;
   border-bottom: 1px solid #ecf0f1;
 }
 
-.cd-form div {
+form#new_idea div {
   /* form element wrapper */
   position: relative;
   margin: 20px 0;
 }
 
-.cd-form h4,
-.cd-form .cd-label {
+form#new_idea h4,
+form#new_idea .cd-label {
   font-size: 1.3rem;
   color: #94aab0;
   margin-bottom: 10px;
 }
 
-.cd-form .cd-label {
+form#new_idea .cd-label {
   display: block;
 }
 
-.cd-form input,
-.cd-form textarea,
-.cd-form select,
-.cd-form label,
+form#new_idea input,
+form#new_idea textarea,
+form#new_idea select,
+form#new_idea label,
 .convo-subject{
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
   color: #2b3e51;
 }
 
-.cd-form input[type="text"],
-.cd-form input[type="email"],
-.cd-form textarea,
-.cd-form select,
-.cd-form legend,
+form#new_idea input[type="text"],
+form#new_idea input[type="email"],
+form#new_idea textarea,
+form#new_idea select,
+form#new_idea legend,
 .convo-subject {
   display: block;
   width: 100%;
@@ -463,10 +463,10 @@ menu.menu-segment ul a {
   appearance: none;
 }
 
-.cd-form input[type="text"],
-.cd-form input[type="email"],
-.cd-form textarea,
-.cd-form select,
+form#new_idea input[type="text"],
+form#new_idea input[type="email"],
+form#new_idea textarea,
+form#new_idea select,
 .convo-subject {
   /* general style for input elements */
   padding: 12px;
@@ -476,22 +476,22 @@ menu.menu-segment ul a {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
 }
 
-.cd-form input[type="text"]:focus,
-.cd-form input[type="email"]:focus,
-.cd-form textarea:focus,
-.cd-form select:focus,
+form#new_idea input[type="text"]:focus,
+form#new_idea input[type="email"]:focus,
+form#new_idea textarea:focus,
+form#new_idea select:focus,
 .convo-subject {
   outline: none;
   border-color: #2c97de;
   box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
 }
 
-.cd-form .cd-select {
+form#new_idea .cd-select {
   /* select element wapper */
   position: relative;
 }
 
-.cd-form .cd-select::after {
+form#new_idea .cd-select::after {
   /* arrow icon for select element */
   content: '';
   position: absolute;
@@ -506,26 +506,26 @@ menu.menu-segment ul a {
   pointer-events: none;
 }
 
-.cd-form select {
+form#new_idea select {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
 
-.cd-form select::-ms-expand {
+form#new_idea select::-ms-expand {
   display: none;
 }
 
-.cd-form .cd-form-list {
+form#new_idea form#new_idea-list {
   margin-top: 16px;
 }
 
-.cd-form .cd-form-list::after {
+form#new_idea form#new_idea-list::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.cd-form .cd-form-list li {
+form#new_idea form#new_idea-list li {
   /* wrapper for radio and checkbox input types */
   display: inline-block;
   position: relative;
@@ -537,8 +537,8 @@ menu.menu-segment ul a {
   float: left;
 }
 
-.cd-form input[type=radio],
-.cd-form input[type=checkbox] {
+form#new_idea input[type=radio],
+form#new_idea input[type=checkbox] {
   /* hide original check and radio buttons */
   position: absolute;
   left: 0;
@@ -554,15 +554,15 @@ menu.menu-segment ul a {
   z-index: 2;
 }
 
-.cd-form input[type="radio"] + label,
-.cd-form input[type="checkbox"] + label {
+form#new_idea input[type="radio"] + label,
+form#new_idea input[type="checkbox"] + label {
   padding-left: 24px;
 }
 
-.cd-form input[type="radio"] + label::before,
-.cd-form input[type="radio"] + label::after,
-.cd-form input[type="checkbox"] + label::before,
-.cd-form input[type="checkbox"] + label::after {
+form#new_idea input[type="radio"] + label::before,
+form#new_idea input[type="radio"] + label::after,
+form#new_idea input[type="checkbox"] + label::before,
+form#new_idea input[type="checkbox"] + label::after {
   /* custom radio and check boxes */
   content: '';
   display: block;
@@ -574,25 +574,25 @@ menu.menu-segment ul a {
   height: 16px;
 }
 
-.cd-form input[type="radio"] + label::before,
-.cd-form input[type="checkbox"] + label::before {
+form#new_idea input[type="radio"] + label::before,
+form#new_idea input[type="checkbox"] + label::before {
   border: 1px solid #cfd9db;
   background: #ffffff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
 }
 
-.cd-form input[type="radio"] + label::before,
-.cd-form input[type="radio"] + label::after {
+form#new_idea input[type="radio"] + label::before,
+form#new_idea input[type="radio"] + label::after {
   border-radius: 50%;
 }
 
-.cd-form input[type="checkbox"] + label::before,
-.cd-form input[type="checkbox"] + label::after {
+form#new_idea input[type="checkbox"] + label::before,
+form#new_idea input[type="checkbox"] + label::after {
   border-radius: .25em;
 }
 
-.cd-form input[type="radio"] + label::after,
-.cd-form input[type="checkbox"] + label::after {
+form#new_idea input[type="radio"] + label::after,
+form#new_idea input[type="checkbox"] + label::after {
   background-color: #2c97de;
   background-position: center center;
   background-repeat: no-repeat;
@@ -600,51 +600,51 @@ menu.menu-segment ul a {
   display: none;
 }
 
-.cd-form input[type="radio"] + label::after {
+form#new_idea input[type="radio"] + label::after {
   /* custom image for radio button */
   background-image: url("../img/cd-icon-radio.svg");
 }
 
-.cd-form input[type="checkbox"] + label::after {
+form#new_idea input[type="checkbox"] + label::after {
   /* custom image for checkbox */
   background-image: url("../img/cd-icon-check.svg");
 }
 
-.cd-form input[type="radio"]:focus + label::before,
-.cd-form input[type="checkbox"]:focus + label::before {
+form#new_idea input[type="radio"]:focus + label::before,
+form#new_idea input[type="checkbox"]:focus + label::before {
   /* add focus effect for radio and check buttons */
   box-shadow: 0 0 5px rgba(44, 151, 222, 0.6);
 }
 
-.cd-form input[type="radio"]:checked + label::after,
-.cd-form input[type="checkbox"]:checked + label::after {
+form#new_idea input[type="radio"]:checked + label::after,
+form#new_idea input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
-.cd-form input[type="radio"]:checked + label::before,
-.cd-form input[type="radio"]:checked + label::after,
-.cd-form input[type="checkbox"]:checked + label::before,
-.cd-form input[type="checkbox"]:checked + label::after {
+form#new_idea input[type="radio"]:checked + label::before,
+form#new_idea input[type="radio"]:checked + label::after,
+form#new_idea input[type="checkbox"]:checked + label::before,
+form#new_idea input[type="checkbox"]:checked + label::after {
   -webkit-animation: cd-bounce 0.3s;
   -moz-animation: cd-bounce 0.3s;
   animation: cd-bounce 0.3s;
 }
 
-.cd-form input[type="submit"] {
+form#new_idea input[type="submit"] {
   color: #fff;
 }
 
-.cd-form textarea {
+form#new_idea textarea {
   min-height: 200px;
   resize: vertical;
   overflow: auto;
 }
 
-.cd-form [required] {
+form#new_idea [required] {
   background: url("../img/cd-required.svg") no-repeat top right;
 }
 
-.cd-form .error-message p {
+form#new_idea .error-message p {
   background: #e94b35;
   color: #ffffff;
   font-size: 1.4rem;
@@ -655,28 +655,28 @@ menu.menu-segment ul a {
   padding: 16px;
 }
 
-.cd-form .error {
+form#new_idea .error {
   border-color: #e94b35 !important;
 }
 
 @media only screen and (min-width: 600px) {
-  .cd-form div {
+  form#new_idea div {
     /* form element wrapper */
     margin: 32px 0;
   }
-  .cd-form legend + div {
+  form#new_idea legend + div {
     /* reduce margin-top for first form element after the legend */
     margin-top: 20px;
   }
-  .cd-form h4,
-  .cd-form .cd-label {
+  form#new_idea h4,
+  form#new_idea .cd-label {
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
-  .cd-form input[type="text"],
-  .cd-form input[type="email"],
-  .cd-form textarea,
-  .cd-form select {
+  form#new_idea input[type="text"],
+  form#new_idea input[type="email"],
+  form#new_idea textarea,
+  form#new_idea select {
     padding: 16px;
   }
 }
@@ -719,45 +719,408 @@ menu.menu-segment ul a {
   }
 }
 
-.cd-form .icon input,
-.cd-form .icon select,
-.cd-form .icon textarea {
+form#new_idea .icon input,
+form#new_idea .icon select,
+form#new_idea .icon textarea {
   padding-left: 54px !important;
 }
 
-.cd-form .user {
+form#new_idea .user {
   background: url("../img/cd-icon-user.svg") no-repeat 16px center;
 }
 
-.cd-form [required].user {
+form#new_idea [required].user {
   background: url("../img/cd-icon-user.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
 }
 
-.cd-form .company {
+form#new_idea .company {
   background: url("../img/cd-icon-company.svg") no-repeat 16px center;
 }
 
-.cd-form [required].company {
+form#new_idea [required].company {
   background: url("../img/cd-icon-company.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
 }
 
-.cd-form .email {
+form#new_idea .email {
   background: url("../img/cd-icon-email.svg") no-repeat 16px center;
 }
 
-.cd-form [required].email {
+form#new_idea [required].email {
   background: url("../img/cd-icon-email.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
 }
 
-.cd-form .budget {
+form#new_idea .budget {
   background: url("../img/cd-icon-budget.svg") no-repeat 16px center;
 }
 
-.cd-form .message {
+form#new_idea .message {
   background: url("../img/cd-icon-message.svg") no-repeat 16px 16px;
 }
 
-.cd-form [required].message {
+form#new_idea [required].message {
+  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px, url("../img/cd-required.svg") no-repeat top right;
+}
+
+form#edit_idea_7 {
+  width: 90%;
+  max-width: 600px;
+  margin: 4em auto;
+}
+
+form#edit_idea_7::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+form#edit_idea_7 fieldset {
+  margin: 24px 0;
+}
+
+form#edit_idea_7 legend {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+form#edit_idea_7 div {
+  /* form element wrapper */
+  position: relative;
+  margin: 20px 0;
+}
+
+form#edit_idea_7 h4,
+form#edit_idea_7 .cd-label {
+  font-size: 1.3rem;
+  color: #94aab0;
+  margin-bottom: 10px;
+}
+
+form#edit_idea_7 .cd-label {
+  display: block;
+}
+
+form#edit_idea_7 input,
+form#edit_idea_7 textarea,
+form#edit_idea_7 select,
+form#edit_idea_7 label,
+.convo-subject{
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  color: #2b3e51;
+}
+
+form#edit_idea_7 input[type="text"],
+form#edit_idea_7 input[type="email"],
+form#edit_idea_7 textarea,
+form#edit_idea_7 select,
+form#edit_idea_7 legend,
+.convo-subject {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+form#edit_idea_7 input[type="text"],
+form#edit_idea_7 input[type="email"],
+form#edit_idea_7 textarea,
+form#edit_idea_7 select,
+.convo-subject {
+  /* general style for input elements */
+  padding: 12px;
+  border: 1px solid #cfd9db;
+  background-color: #ffffff !important;
+  border-radius: .25em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+form#edit_idea_7 input[type="text"]:focus,
+form#edit_idea_7 input[type="email"]:focus,
+form#edit_idea_7 textarea:focus,
+form#edit_idea_7 select:focus,
+.convo-subject {
+  outline: none;
+  border-color: #2c97de;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+}
+
+form#edit_idea_7 .cd-select {
+  /* select element wapper */
+  position: relative;
+}
+
+form#edit_idea_7 .cd-select::after {
+  /* arrow icon for select element */
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: 16px;
+  top: 50%;
+  margin-top: -8px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  pointer-events: none;
+}
+
+form#edit_idea_7 select {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+form#edit_idea_7 select::-ms-expand {
+  display: none;
+}
+
+form#edit_idea_7 form#edit_idea_7-list {
+  margin-top: 16px;
+}
+
+form#edit_idea_7 form#edit_idea_7-list::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+form#edit_idea_7 form#edit_idea_7-list li {
+  /* wrapper for radio and checkbox input types */
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 26px 16px 0;
+  float: left;
+}
+
+form#edit_idea_7 input[type=radio],
+form#edit_idea_7 input[type=checkbox] {
+  /* hide original check and radio buttons */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+form#edit_idea_7 input[type="radio"] + label,
+form#edit_idea_7 input[type="checkbox"] + label {
+  padding-left: 24px;
+}
+
+form#edit_idea_7 input[type="radio"] + label::before,
+form#edit_idea_7 input[type="radio"] + label::after,
+form#edit_idea_7 input[type="checkbox"] + label::before,
+form#edit_idea_7 input[type="checkbox"] + label::after {
+  /* custom radio and check boxes */
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+}
+
+form#edit_idea_7 input[type="radio"] + label::before,
+form#edit_idea_7 input[type="checkbox"] + label::before {
+  border: 1px solid #cfd9db;
+  background: #ffffff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+form#edit_idea_7 input[type="radio"] + label::before,
+form#edit_idea_7 input[type="radio"] + label::after {
+  border-radius: 50%;
+}
+
+form#edit_idea_7 input[type="checkbox"] + label::before,
+form#edit_idea_7 input[type="checkbox"] + label::after {
+  border-radius: .25em;
+}
+
+form#edit_idea_7 input[type="radio"] + label::after,
+form#edit_idea_7 input[type="checkbox"] + label::after {
+  background-color: #2c97de;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.4);
+  display: none;
+}
+
+form#edit_idea_7 input[type="radio"] + label::after {
+  /* custom image for radio button */
+  background-image: url("../img/cd-icon-radio.svg");
+}
+
+form#edit_idea_7 input[type="checkbox"] + label::after {
+  /* custom image for checkbox */
+  background-image: url("../img/cd-icon-check.svg");
+}
+
+form#edit_idea_7 input[type="radio"]:focus + label::before,
+form#edit_idea_7 input[type="checkbox"]:focus + label::before {
+  /* add focus effect for radio and check buttons */
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.6);
+}
+
+form#edit_idea_7 input[type="radio"]:checked + label::after,
+form#edit_idea_7 input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+form#edit_idea_7 input[type="radio"]:checked + label::before,
+form#edit_idea_7 input[type="radio"]:checked + label::after,
+form#edit_idea_7 input[type="checkbox"]:checked + label::before,
+form#edit_idea_7 input[type="checkbox"]:checked + label::after {
+  -webkit-animation: cd-bounce 0.3s;
+  -moz-animation: cd-bounce 0.3s;
+  animation: cd-bounce 0.3s;
+}
+
+form#edit_idea_7 input[type="submit"] {
+  color: #fff;
+}
+
+form#edit_idea_7 textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+
+form#edit_idea_7 [required] {
+  background: url("../img/cd-required.svg") no-repeat top right;
+}
+
+form#edit_idea_7 .error-message p {
+  background: #e94b35;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: .25em;
+  padding: 16px;
+}
+
+form#edit_idea_7 .error {
+  border-color: #e94b35 !important;
+}
+
+@media only screen and (min-width: 600px) {
+  form#edit_idea_7 div {
+    /* form element wrapper */
+    margin: 32px 0;
+  }
+  form#edit_idea_7 legend + div {
+    /* reduce margin-top for first form element after the legend */
+    margin-top: 20px;
+  }
+  form#edit_idea_7 h4,
+  form#edit_idea_7 .cd-label {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  form#edit_idea_7 input[type="text"],
+  form#edit_idea_7 input[type="email"],
+  form#edit_idea_7 textarea,
+  form#edit_idea_7 select {
+    padding: 16px;
+  }
+}
+
+@-webkit-keyframes cd-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+  }
+}
+
+@-moz-keyframes cd-bounce {
+  0%,
+  100% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(0.8);
+  }
+}
+
+@keyframes cd-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+form#edit_idea_7 .icon input,
+form#edit_idea_7 .icon select,
+form#edit_idea_7 .icon textarea {
+  padding-left: 54px !important;
+}
+
+form#edit_idea_7 .user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center;
+}
+
+form#edit_idea_7 [required].user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+form#edit_idea_7 .company {
+  background: url("../img/cd-icon-company.svg") no-repeat 16px center;
+}
+
+form#edit_idea_7 [required].company {
+  background: url("../img/cd-icon-company.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+form#edit_idea_7 .email {
+  background: url("../img/cd-icon-email.svg") no-repeat 16px center;
+}
+
+form#edit_idea_7 [required].email {
+  background: url("../img/cd-icon-email.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+form#edit_idea_7 .budget {
+  background: url("../img/cd-icon-budget.svg") no-repeat 16px center;
+}
+
+form#edit_idea_7 .message {
+  background: url("../img/cd-icon-message.svg") no-repeat 16px 16px;
+}
+
+form#edit_idea_7 [required].message {
   background: url("../img/cd-icon-message.svg") no-repeat 16px 16px, url("../img/cd-required.svg") no-repeat top right;
 }
 
